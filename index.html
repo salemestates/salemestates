@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salem Estates HOA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --header-bg: #dbd1a0;
+      --background-color: #f5f5f5;
+      --text-color: #333;
+      --light-text: #777;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+    }
+    header {
+      background: var(--header-bg);
+      color: var(--text-color);
+      text-align: center;
+      padding: 2rem 1rem;
+      border-radius: 0 0 10px 10px;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    main section {
+      background: #fff;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #navbar {
+      background: var(--header-bg);
+      padding: 0.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    #navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    #navbar li {
+      margin: 0 1rem;
+    }
+    #navbar a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    #navbar a:hover {
+      text-decoration: underline;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h2 {
+      border-bottom: 2px solid var(--text-color);
+      padding-bottom: 0.5rem;
+    }
+    .subheading {
+      font-size: 1.2rem;
+      margin: 0.5rem 0;
+      color: var(--text-color);
+    }
+    a {
+      color: #4A90E2);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #2a6ca4; /* A slightly darker shade for the hover effect */
+      text-decoration: underline;
+    }
+    a[href$=".pdf"]::after {
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900; /* Ensures the icon displays correctly */
+      content: "\f019"; /* Font Awesome's download icon */
+      margin-left: 0.3em;
+    }
+    .board-members li {
+      margin-bottom: 0.5rem;
+    }
+    /* FAQ Section Styles */
+    #faq .faq-item {
+      margin-bottom: 1rem;
+    }
+    #faq .faq-item h3 {
+      margin: 0.5rem 0 0 0;
+      color: var(--text-color);
+    }
+    #faq .faq-item p {
+      margin: 0;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--light-text);
+      margin-top: 2rem;
+      padding: 1rem 0;
+      border-top: 1px solid #ddd;
+    }
+    @media (max-width: 600px) {
+      header {
+        padding: 1.5rem 1rem;
+      }
+      main section {
+        margin: 1rem 0;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Salem Estates Homeowners Association</h1>
+      <p class="subheading">Springfield, Illinois</p>
+      <img src="images/Salem-Estates-HOA-Entrance-Sign.webp" alt="Salem Estates Neighborhood Entrance">
+    </div>
+  </header>
+
+  <nav id="navbar">
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#board-members">Board</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#covenants">Covenants</a></li>
+      <li><a href="#faq">FAQs</a></li>
+    </ul>
+  </nav>
+  
+  <main class="container">
+    <!-- Intro -->
+    <section id="intro">
+      <h2>Welcome to Salem Estates HOA</h2>
+      <p>
+        Welcome to the Salem Estates Homeowners Association website. Here you'll find important information about our community, including our board members, the restrictive covenants that guide us, and answers to common questions. We’re committed to keeping you informed and connected.
+      </p>
+    </section>
+
+    <!-- HOA Board Members Section -->
+    <section id="board-members">
+      <h2>HOA Board Members</h2>
+      <p>
+      Our Board of Directors is entrusted with managing the affairs of Salem Estates HOA in accordance with our founding documents. They have full authority to ensure that our community guidelines are upheld and that our neighborhood runs smoothly. We appreciate their dedication and service to our community.
+    </p>
+      <ul class="board-members">
+        <li><strong>Bob Craghead</strong> – President – 224 Whitman Drive</li>
+        <li><strong>John Archer</strong> – 213 Blake Court</li>
+        <li><strong>Terry Lucas</strong> – 225 Whitman Drive</li>
+        <li><strong>Jamie Yates</strong> – 4632 Casey Drive</li>
+        <li><strong>Jon Hackler</strong> – 4633 Shalegh Avenue</li>
+        <li><strong>Phil Kaufmann</strong> – 4621 Casey Drive</li>
+        <li><strong>Josh Cuzzort</strong> – 4623 Shalegh Avenue</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:salemestateshoa@gmail.com">salemestateshoa@gmail.com</a>
+      </p>
+      <p>
+        Please feel free to reach out with any questions or concerns.
+      </p>
+    </section>
+
+    <!-- Restrictive Covenants Section -->
+    <section id="covenants">
+      <h2>Restrictive Covenants</h2>
+      <p>
+        For residents who do not have a personal copy of our community guidelines, please download the Restrictive Covenants for the First Addition in Salem Estates. Although our subdivision is comprised of five additions, these covenants are consistent across all areas. The only difference between additions is the minimum living space requirement for the residences.
+      </p>
+      <p>
+        <a href="docs/Salem-Estates-HOA-First-Edition-Restrictive-Covenants.pdf" target="_blank">Download Restrictive Covenants</a>
+      </p>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>When are HOA assessments due?</h3>
+        <p>Assessments are due on April 15 each year.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much is the assessment?</h3>
+        <p>As of April 2025, the assessment is $125 per lot (subject to change).</p>
+      </div>
+      <div class="faq-item">
+        <h3>How can I pay my assessment?</h3>
+        <p>
+          Mail a check payable to <em>Salem Estates Homeowners Association</em> to:<br>
+          SEHOA<br>
+          4640 Thompson Road<br>
+          Springfield, Illinois 62711<br>
+          <small>*Late payments incur a 10% penalty every 30 days.</small>
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>What community events does the HOA host?</h3>
+        <p>
+          We host an annual end-of-summer garage sale (typically the first weekend in August) and, in partnership with Salem Estates West, a neighborhood Easter egg hunt in the spring.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>What's the difference between Salem Estates and Salem Estates West?</h3>
+        <p>
+          <a href="https://salemestateswest.org" target="_blank">Salem Estates West</a> is our sister HOA located directly to our west. It covers the section of Longfellow Drive between Bradfordton Road and Maggie Drive, and all properties on Maggie Drive or west of it. Salem Estates includes Gray Court, Blake Court, Whitman Drive, Kilmer Court, Casey Drive, Abigail Drive, Shalegh Avenue, Fitzgerald Drive, and Thompson Road.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>When are the annual meetings?</h3>
+        <p>
+          The annual meeting is scheduled each year. Homeowners receive advance notice with the date, time, and location.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I verify if assessments/dues are up-to-date when buying or selling a home?</h3>
+        <p>
+          Please email our board at <a href="mailto:salemestateshoa@gmail.com">salemestateshoa@gmail.com</a> with complete details, and we will respond promptly.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Salem Estates HOA
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
